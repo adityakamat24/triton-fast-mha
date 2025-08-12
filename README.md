@@ -177,10 +177,10 @@ The README expects these images:
 * `assets/latency_vs_seq.png`
 * `assets/speedup_vs_seq.png`
 
-```markdown
+
 ![Latency vs Seq Len](assets/latency_vs_seq.png)
 ![Speedup vs Seq Len](assets/speedup_vs_seq.png)
-```
+
 
 ## Results Snapshot
 
