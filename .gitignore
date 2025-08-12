@@ -1,0 +1,5 @@
+.triton_cache/
+profiles/
+*.ncu-rep
+assets/results.csv
+sweep.csv
