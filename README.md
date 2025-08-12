@@ -43,20 +43,21 @@
 ---
 
 ## Repo layout
+```
 ├─ fa_triton/
-│ ├─ kernels/
-│ │ └─ mha_fwd.py # Triton kernel (fused attention)
-│ ├─ fa_triton.py # PyTorch wrapper + launch logic
-│ └─ bench.py # Micro-benchmark + correctness check
-├─ bench_sweep.py # Batch multiple N and save CSV
-├─ plot_results.py # Plot latency & speedup from CSV
+│  ├─ kernels/
+│  │  └─ mha_fwd.py          # Triton kernel (fused attention)
+│  ├─ fa_triton.py           # PyTorch wrapper + launch logic
+│  └─ bench.py               # Micro-benchmark + correctness check
+├─ bench_sweep.py            # Batch multiple N and save CSV
+├─ plot_results.py           # Plot latency & speedup from CSV
 ├─ assets/
-│ ├─ latency_vs_seq.png # Generated chart
-│ └─ speedup_vs_seq.png # Generated chart
-├─ profiles/ # (Optional) Nsight Compute reports (.ncu-rep)
+│  ├─ latency_vs_seq.png     # Generated chart
+│  └─ speedup_vs_seq.png     # Generated chart
+├─ profiles/                 # (Optional) Nsight Compute reports (.ncu-rep)
 ├─ .gitignore
 └─ README.md
-
+```
 
 ---
 
@@ -89,7 +90,7 @@ pip install triton==3.4.0 numpy matplotlib
 # FA Triton
 
 A Triton-based Flash Attention implementation optimized for consumer GPUs.
-
+```
 ## Quick Start
 
 Run the micro-benchmark and correctness check:
@@ -217,3 +218,5 @@ MIT
 ## Acknowledgements
 
 Inspired by FlashAttention and Triton community examples. This repo shows how to apply those ideas end-to-end on a consumer GPU with clear benchmarks and profiles.
+
+
