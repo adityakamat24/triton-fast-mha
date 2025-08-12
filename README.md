@@ -174,9 +174,6 @@ python plot_results.py --csv assets/results.csv --out assets
 ```
 
 The README expects these images:
-* `assets/latency_vs_seq.png`
-* `assets/speedup_vs_seq.png`
-
 
 ![Latency vs Seq Len](assets/latency_vs_seq.png)
 ![Speedup vs Seq Len](assets/speedup_vs_seq.png)
